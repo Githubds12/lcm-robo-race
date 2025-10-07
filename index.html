@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM Robo-Race</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>LCM Robo-Race 🤖🏁</h1>
+
+   <div class="controls">
+    <label>
+        <img src="bolt.png" class="control-robot-img">
+        Bolt's Jump (1-25): 
+        <input type="number" id="robot1-input" min="1" max="25" value="3">
+    </label>
+    <label>
+        <img src="gizmo.png" class="control-robot-img">
+        Gizmo's Jump (1-25): 
+        <input type="number" id="robot2-input" min="1" max="25" value="5">
+    </label>
+    <button id="race-btn">Race!</button>
+</div>
+
+    <div id="game-board">
+        <img src="bolt.png" id="robot1" class="robot">
+        <img src="gizmo.png" id="robot2" class="robot">
+        <div id="robot1-name" class="robot-name">Bolt 🔵</div>
+        <div id="robot2-name" class="robot-name">Gizmo 🔴</div>
+    </div>
+
+    <div id="result-area">
+        <h2>The LCM is... ?</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

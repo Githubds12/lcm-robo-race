@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.controls {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.controls label {
+    margin-right: 15px;
+}
+
+.controls input {
+    width: 50px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.controls button {
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #218838;
+}
+
+#game-board {
+    width: 90%;
+    max-width: 800px;
+    height: 250px;
+    background-color: #d3e9f8;
+    border: 3px solid #a8cde0;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.track-square {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a8cde0;
+    background-color: #fff;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.robot {
+    width: 45px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    transform: translateX(5px); 
+    transition: transform 0.5s ease-out;
+}
+
+#robot1 {
+    bottom: 30px;
+}
+
+#robot2 {
+    bottom: 170px;
+}
+
+.robot-name {
+    position: absolute;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+#robot1-name {
+    bottom: 45px;
+    left: 55px;
+}
+
+#robot2-name {
+    bottom: 185px;
+    left: 55px;
+}
+
+#result-area {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #0056b3;
+}
+
+.control-robot-img {
+    width: 25px;
+    height: auto;
+    vertical-align: middle; /* This is key to aligning with the text */
+    margin-right: 8px;
+}
